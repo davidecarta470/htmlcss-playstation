@@ -1,0 +1,57 @@
+/* GLOBAL */
+section{
+  margin-bottom:40px;
+}
+.font-grey{
+  color: #727272;
+}
+.font-blue{
+  color:#0072ce;
+}
+/* HEADER */
+
+header{
+  height: 100px;
+}
+header div:first-child{
+  height: 40%;
+}
+img[src*="img/sony_logo.svg"]{
+  width:100px;
+  padding-right: 20px;
+}
+
+
+/* SECTION 1 */
+.dc-bg{
+  background-image: url(../img/jumbo-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.dc-box{
+  
+  height: 100vh;
+  color:white;
+}
+.dc-logo{
+  width: 60%;
+}
+.dc-btn{
+  border-radius: 50px;
+  background-color: #cd3d0f;
+  border:#cd3d0f ;
+}
+.dc-btn-blue{
+  border-radius: 50px;
+  background-color: #2d64e6;
+  border:#2d64e6 ;
+}
+/* SECTION2 */
+img[src*="img/returnal-listing-thumb-01-ps5.jpg"],
+img[src*="img/ratchet-and-clank-rift-apart-keyart.jpg"]{
+  border-radius: 30px;
+}
+img{
+  
+  width: 100%;
+}
