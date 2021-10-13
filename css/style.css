@@ -60,8 +60,19 @@ img[src*="img/sony_logo.svg"]{
 .dc-btn-blue{
   border-radius: 50px;
   background-color: #2d64e6;
-  border:#2d64e6 ;
+  border:0px ;
 }
+.dc-btn-white{
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0px;
+  }
+.dc-btn-white-b{
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  border: 0px;
+  }
 
 
 /* SECTION2 */
@@ -84,13 +95,29 @@ img[src*="img/crash-bandicoot-4-its-about-time-store-art.jpg"]{
 }
 
 
-/* SECTION6 */
+/* SECTION 6 */
 .dc-bg-sct6{
   background-color:#1f1f1f;
 }
 
+/* SECTION 8 */
+.dc-bg-sct8{
+  background-color:#bebcbb;
+  color:black;
+}
 
+img[src*="img/ps-plus-logo.png"]{
+  width: 50%;
+}
 
+/* SECTION 10 */
+.dc-bg-sct10{
+  background-color:#161c3b;
+  color:white;
+}
+img[src="img/ps-now-logo-two-column.png"]{
+  width:60%;
+}
 /* Media queries */
 @media screen and (min-width:900px){
   main section:nth-of-type(4) img{
