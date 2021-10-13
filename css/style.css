@@ -11,6 +11,8 @@ section{
 .font-blue{
   color:#0072ce;
 }
+
+
 /* HEADER */
 
 header{
@@ -27,46 +29,69 @@ img[src*="img/sony_logo.svg"]{
 .dc-box{
   width:20%;
 }
+
+
 /* SECTION 1 */
 .dc-bg{
-  background-image: url(../img/jumbo-bg.png);
   background-size: cover;
   background-position: center;
-}
-.dc-jumbo{
   height: 100vh;
   color:white;
 }
-  
+.dc-jumbo{
+  background-image: url(../img/jumbo-bg.png);
+}
+.dc-jumbo2{
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+} 
 .dc-logo{
-  width: 60%;
+  width: 50%;
 }
 .dc-btn{
   border-radius: 50px;
   background-color: #cd3d0f;
-  border:#cd3d0f ;
+  border:1px solid #cd3d0f ;
 }
+.dc-btn:hover{
+  background-color: #9e3b1a;
+  border:1px solid #9e3b1a;
+}
+
 .dc-btn-blue{
   border-radius: 50px;
   background-color: #2d64e6;
   border:#2d64e6 ;
 }
+
+
 /* SECTION2 */
 img[src*="img/returnal-listing-thumb-01-ps5.jpg"],
-img[src*="img/ratchet-and-clank-rift-apart-keyart.jpg"]{
+img[src*="img/ratchet-and-clank-rift-apart-keyart.jpg"],
+img[src*="img/tony-hawks-pro-skater-1-2-store-art.jpg" ],
+img[src*="img/crash-bandicoot-4-its-about-time-store-art.jpg"]{
   border-radius: 30px;
 }
+
+
 /* SECTION 4 */
 .dc-item{
   transition: all 0.2s;
 }
-
 .dc-item:hover{
   border-bottom:2px solid royalblue;
-  transform: scale(1.1);
+  transform: scale(1.2);
   font-weight: bold;
 }
 
+
+/* SECTION6 */
+.dc-bg-sct6{
+  background-color:#1f1f1f;
+}
+
+
+
+/* Media queries */
 @media screen and (min-width:900px){
   main section:nth-of-type(4) img{
   width: 50%;
