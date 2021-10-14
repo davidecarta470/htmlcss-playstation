@@ -12,26 +12,86 @@ section{
   color:#0072ce;
 }
 
+/* btn1 */
+.dc-btn-orange{
+  background-color: #cd3d0f;
+}
+.dc-btn-orange:hover{
+  background-color: #9e3b1a;
+}
+
+/* btn2 */
+.dc-btn-blue{
+  background-color: #2d64e6;
+}
+.dc-btn-blue:hover{
+  background-color: #5e85e0;
+}
+
+/* btn3 */
+.dc-btn-white{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dc-btn-white:hover{
+  background-color:  rgba(255, 255, 255, 0.8);
+  color:#0072ce ;
+}
+
+  /* btn4 */
+.dc-btn-white-b{
+  color: black;
+  background-color: white;
+  }
+.dc-btn-white-b:hover{
+  background-color:  rgba(255, 255, 255, 0.5);
+  color:black
+}
+
+ /* btn5 */
+.dc-btn-nav{
+  color: white;
+  background-color:#3b3b3b ;
+  }
+.dc-btn-nav:hover{
+  background-color: #6b6b6b ;
+  color:white;
+}
+
+/* btn generic */
+.dc-btn{
+  border-radius:50px;
+  border:0;
+}
 
 /* HEADER */
-
-header{
-  height: 100px;
-}
-header div:first-child{
-  height: 40%;
+.dc-bg-nav,header{
+  background-color: white !important;
 }
 img[src*="img/sony_logo.svg"]{
   width:100px;
   padding-right: 20px;
 }
-
-.dc-box{
-  width:20%;
+img[src*="img/play_logo.svg"]{
+  width: 50px;
+}
+header ul li a{
+  color:black !important;
+  font-weight: bold;
+}
+.dc-nav-right{
+  min-width: 350px !important;
+}
+.fa-search{
+  color: black;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
-
 /* SECTION 1 */
+main{
+  padding-top: 112px;
+}
 .dc-bg{
   background-size: cover;
   background-position: center;
@@ -47,32 +107,6 @@ img[src*="img/sony_logo.svg"]{
 .dc-logo{
   width: 50%;
 }
-.dc-btn{
-  border-radius: 50px;
-  background-color: #cd3d0f;
-  border:1px solid #cd3d0f ;
-}
-.dc-btn:hover{
-  background-color: #9e3b1a;
-  border:1px solid #9e3b1a;
-}
-
-.dc-btn-blue{
-  border-radius: 50px;
-  background-color: #2d64e6;
-  border:0px ;
-}
-.dc-btn-white{
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 0px;
-  }
-.dc-btn-white-b{
-  border-radius: 50px;
-  color: black;
-  background-color: white;
-  border: 0px;
-  }
 
 
 /* SECTION2 */
