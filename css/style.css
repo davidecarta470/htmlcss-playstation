@@ -121,6 +121,27 @@ img[src="img/ps-now-logo-two-column.png"]{
   width:60%;
 }
 
+/* FOOTER */
+.dc-bg-footer{
+  background-color:#00439c;
+  color :white
+}
+footer img{
+  width:20%;
+}
+footer ul li{
+  list-style:none;
+}
+footer ul li a{
+  color:white;
+  text-decoration:none;
+}
+footer select,label{
+  margin-top:30px;
+  border:0px;
+  color:white;
+}
+
 /* Media queries */
 @media screen and (min-width:768px){
   main section:nth-of-type(4) img{
