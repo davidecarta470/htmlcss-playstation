@@ -85,13 +85,15 @@ img[src*="img/crash-bandicoot-4-its-about-time-store-art.jpg"]{
 
 
 /* SECTION 4 */
+
 .dc-item{
+  height:26vh;
   transition: all 0.2s;
 }
 .dc-item:hover{
   border-bottom:2px solid royalblue;
-  transform: scale(1.2);
-  font-weight: bold;
+  transform:scale(1.2);
+  font-weight:bold;
 }
 
 
@@ -118,9 +120,20 @@ img[src*="img/ps-plus-logo.png"]{
 img[src="img/ps-now-logo-two-column.png"]{
   width:60%;
 }
+
 /* Media queries */
-@media screen and (min-width:900px){
+@media screen and (min-width:768px){
   main section:nth-of-type(4) img{
   width: 50%;
+  
  }
+ .dc-item{
+   height:22vh;
+   }
+}
+@media screen and (min-width:1200px){
+  
+ .dc-item{
+   height:26vh;
+   }
 }
