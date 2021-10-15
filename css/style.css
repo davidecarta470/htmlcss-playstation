@@ -94,6 +94,7 @@ section{
 .dc-btn-nav{
   color: white;
   background-color:#3b3b3b ;
+  padding: 2px 20px;
   }
   .dc-btn-border5:hover{
     border :2px solid  #3b3b3b ;
@@ -142,31 +143,66 @@ section{
 /* HEADER */
 .dc-bg-nav,header{
   background-color: white !important;
+  font-size: 13px; 
+}
+header ul li a{
+   color:black !important;
+  font-weight: 600;
+}
+.dc-nav-top{
+  text-align: right;
 }
 img[src*="img/sony_logo.svg"]{
   width:100px;
-  padding-right: 20px;
+  padding: 10px;
 }
 img[src*="img/play_logo.svg"]{
   width: 50px;
 }
-header ul li a{
-  color:black !important;
-  font-weight: 600;
+
+
+/* substitution  toggle with chevron */
+.dropdown-toggle::after{
+ display: none;
 }
+.fa-chevron-down{
+  font-size:10px;
+  color: #b6b6b6 !important;
+  
+}
+
 .dc-nav-right{
   min-width: 350px !important;
+}
+
+.dc-search{
+  line-height: 30px;
 }
 .fa-search{
   color: black;
   font-size: 20px;
   padding-left: 20px;
-  padding-top: 10px;
+  vertical-align: middle;
 }
+
+/* hover li>a and search-icon */
+header ul li:hover a,
+header ul li:hover .fa-chevron-down,
+.fa-search:hover{
+  color: #0072ce !important;
+}
+
+header ul li a,
+header ul li .fa-chevron-down,
+.fa-search
+{
+  transition:color 0.5s;
+}
+
 
 /* SECTION 1 */
 main{
-  padding-top: 112px;
+  padding-top: 100px;
 }
 .dc-zoom{
   animation:dc-bg-scale 3s;
@@ -264,6 +300,9 @@ footer select,label{
   margin-top:30px;
   border:0px;
   color:white;
+}
+footer select{
+  cursor: pointer;
 }
 footer ul li a:hover{
   color:white;
