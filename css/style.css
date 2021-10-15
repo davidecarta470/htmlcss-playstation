@@ -1,4 +1,7 @@
 /* GLOBAL */
+body{
+  overflow-x: hidden;
+}
 img{
   width: 100%;
 }
@@ -110,7 +113,25 @@ section{
   transition:border 0.4s;
 }
 
+/* Hover img (scale shadow filter) */
+.dc-over:hover{
+  filter: opacity(1);
+  transition: all 0.2s linear;
+}
+.dc-over:hover img{
+  transform:translate(0px,-10px) scale(1.05);
+  box-shadow: 0px 10px 8px #6d6c6c;
+  cursor: pointer; 
+}
 
+.dc-over{
+  filter: opacity(0.5);
+  transition: all 0.2s linear;
+}
+ .dc-over img{
+   border-radius: 10px;
+   transition: all 0.2s linear;
+}
 /* HEADER */
 .dc-bg-nav,header{
   background-color: white !important;
@@ -168,33 +189,23 @@ main{
 }
 
 /* SECTION2 */
-img[src*="img/returnal-listing-thumb-01-ps5.jpg"],
-img[src*="img/ratchet-and-clank-rift-apart-keyart.jpg"],
+
 img[src*="img/tony-hawks-pro-skater-1-2-store-art.jpg" ],
 img[src*="img/crash-bandicoot-4-its-about-time-store-art.jpg"]{
   border-radius: 30px;
 }
-section:nth-of-type(2) .dc-over img{ 
-  transition:all 0.2s ease;
-  
-}
-.dc-over:hover img{
-  transform:translate(0px,-10px) scale(1.05);
-  box-shadow: 0px 10px 8px #6d6c6c;
-    
-}
+
+
+
 /* SECTION 4 */
 
 .dc-item{
   height:26vh;
   transition: all 0.2s;
 }
-.dc-item:hover{
-  border-bottom:2px solid royalblue;
-  transform:scale(1.2);
-  font-weight:bold;
+.dc-item>img{
+  transition: all 0.2s;
 }
-
 
 /* SECTION 6 */
 .dc-bg-sct6{
@@ -219,6 +230,12 @@ img[src*="img/ps-plus-logo.png"]{
 img[src="img/ps-now-logo-two-column.png"]{
   width:60%;
 }
+
+
+
+/* OUT  OF SECTION 4 */
+
+
 
 /* FOOTER */
 .dc-bg-footer{
@@ -248,6 +265,8 @@ footer ul li a:hover{
 
 
 /* Media queries */
+/* SECTION 4 */
+/* dimention dc-item */
 @media screen and (min-width:768px){
   main section:nth-of-type(4) img{
   width: 50%;
@@ -264,13 +283,23 @@ footer ul li a:hover{
    }
 }
 
-
-
-.square {
-  width: 200px;
-  height: 200px;
-  background: teal;
-  border-radius: 8px;
-  opacity: 0;
-  transform: scale(1.2);
+/* Hover img ;hover dc-item */
+@media screen and (max-width:600px) {
+.dc-item:hover img{
+  transform:scale(1.1);
+  border-bottom:2px solid #0072ce;
+  cursor: pointer;
+ }
 }
+@media screen and (min-width:600px){
+  .dc-item:hover{
+    transform:scale(1.1);
+    border-bottom:2px solid #0072ce;
+    font-weight:bold;
+    cursor: pointer;
+  }
+  .dc-item:hover img{
+    border-bottom:none;
+  }
+}
+  /******************  */
