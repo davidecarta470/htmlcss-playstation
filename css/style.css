@@ -12,56 +12,104 @@ section{
   color:#0072ce;
 }
 
+@keyframes dc-bg-scale{
+  from{
+    width:0px;
+  }
+  to{
+    width:100%;
+  }
+}
+@keyframes dc-bg-slow{
+  from{
+    background-color:#000202
+  }
+  to{
+    background-color: none;
+  }
+}
+@keyframes dc-bg-slow-tle{
+  0%{
+    padding-bottom:8000px;
+    
+  }
+  50%{
+    padding-bottom:0px;
+    
+  }
+  100%{
+    padding-bottom:80px;
+  }
+}
 /* btn1 */
 .dc-btn-orange{
   background-color: #cd3d0f;
 }
+.dc-btn-border1:hover{
+  border :2px solid #cd3d0f;
+}
 .dc-btn-orange:hover{
-  background-color: #9e3b1a;
+  background-color:#cd3d0f ;
 }
 
 /* btn2 */
 .dc-btn-blue{
   background-color: #2d64e6;
 }
+.dc-btn-border2:hover{
+  border :2px solid #2d64e6;
+}
 .dc-btn-blue:hover{
-  background-color: #5e85e0;
+  background-color:#2d64e6 ;
 }
 
 /* btn3 */
 .dc-btn-white{
   background-color: rgba(255, 255, 255, 0.5);
 }
-.dc-btn-white:hover{
-  background-color:  rgba(255, 255, 255, 0.8);
-  color:#0072ce ;
+.dc-btn-border3:hover{
+  border :2px solid  rgba(255, 255, 255, 0.5);
 }
-
+.dc-btn-white:hover{
+  color: #0072ce;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+  
   /* btn4 */
 .dc-btn-white-b{
   color: black;
   background-color: white;
   }
-.dc-btn-white-b:hover{
-  background-color:  rgba(255, 255, 255, 0.5);
-  color:black
-}
-
+  .dc-btn-border4:hover{
+    border :2px solid  white;
+  }
+  .dc-btn-white-b:hover{
+    background-color: white;
+    color: black;
+  }
  /* btn5 */
 .dc-btn-nav{
   color: white;
   background-color:#3b3b3b ;
   }
-.dc-btn-nav:hover{
-  background-color: #6b6b6b ;
-  color:white;
-}
-
+  .dc-btn-border5:hover{
+    border :2px solid  #3b3b3b ;
+  }
+  .dc-btn-nav:hover{
+    background-color: #3b3b3b ;
+  }
 /* btn generic */
 .dc-btn{
   border-radius:50px;
-  border:0;
+  margin: 2px;
+  border: 0px;
 }
+.dc-btn-border1,.dc-btn-border2,.dc-btn-border3,.dc-btn-border4,.dc-btn-border5{
+  border: 2px solid transparent;
+  border-radius:50px;
+  transition:border 0.4s;
+}
+
 
 /* HEADER */
 .dc-bg-nav,header{
@@ -76,7 +124,7 @@ img[src*="img/play_logo.svg"]{
 }
 header ul li a{
   color:black !important;
-  font-weight: bold;
+  font-weight: 600;
 }
 .dc-nav-right{
   min-width: 350px !important;
@@ -92,13 +140,16 @@ header ul li a{
 main{
   padding-top: 112px;
 }
+.dc-zoom{
+  animation:dc-bg-scale 3s;
+}
 .dc-bg{
-  background-size: cover;
+  background-size:cover;
   background-position: center;
-  height: 100vh;
   color:white;
 }
 .dc-jumbo{
+  height: 600px;
   background-image: url(../img/jumbo-bg.png);
 }
 .dc-jumbo2{
@@ -107,7 +158,14 @@ main{
 .dc-logo{
   width: 50%;
 }
-
+.layover{
+  height:100%;
+  animation:dc-bg-slow 6s linear;
+}
+.dc-move{
+  padding-bottom:80px;
+  animation:dc-bg-slow-tle 5s;
+}
 
 /* SECTION2 */
 img[src*="img/returnal-listing-thumb-01-ps5.jpg"],
@@ -116,8 +174,15 @@ img[src*="img/tony-hawks-pro-skater-1-2-store-art.jpg" ],
 img[src*="img/crash-bandicoot-4-its-about-time-store-art.jpg"]{
   border-radius: 30px;
 }
-
-
+section:nth-of-type(2) .dc-over img{ 
+  transition:all 0.2s ease;
+  
+}
+.dc-over:hover img{
+  transform:translate(0px,-10px) scale(1.05);
+  box-shadow: 0px 10px 8px #6d6c6c;
+    
+}
 /* SECTION 4 */
 
 .dc-item{
@@ -163,7 +228,8 @@ img[src="img/ps-now-logo-two-column.png"]{
 footer img{
   width:20%;
 }
-footer ul li{
+footer ul {
+  padding-left: 0px;
   list-style:none;
 }
 footer ul li a{
@@ -175,6 +241,11 @@ footer select,label{
   border:0px;
   color:white;
 }
+footer ul li a:hover{
+  color:white;
+  text-decoration:underline;
+}
+
 
 /* Media queries */
 @media screen and (min-width:768px){
@@ -191,4 +262,15 @@ footer select,label{
  .dc-item{
    height:26vh;
    }
+}
+
+
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: teal;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(1.2);
 }
